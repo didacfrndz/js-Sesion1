@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='es'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Ejercicio 1 JS</title>
+    <style>
+      body {
+        display: flex;
+
+      }
+      div {
+        border: 1px black solid;
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>EJERCICIO 1 JS</h1>
+    <script>
+      /*Crea un script que te pide el nombre y acontinuacion el apellido
+        y despues muestra tu nombre completo por consola, con un alert
+        y con document write
+        crea un script que te pide 2 numeros y te muestra por consola la suma*/
+      /* let nombre = prompt('tu nombre?');
+      let apellido1 = prompt('Tu primer apellido?');
+      let apellido2 = prompt('Tu segundo apellido?');
+      let numero1 = prompt('Primer numero?');
+      let numero2 = prompt('Segundo numero');
+      console.log('Hola ' + nombre + ' ' + apellido1 + ' ' + apellido2);
+      alert(nombre + ' ' + apellido1 + ' ' + apellido2);
+      document.write(nombre + ' ' + apellido1 + ' ' + apellido2);
+      let resultado = parseInt(numero1) + parseInt(numero2);
+      console.log(
+        'La suma de ' + numero1 + ' y ' + numero2 + ' es igual a ' + resultado
+      );
+        */
+      /*Ejercicio 3 
+      crea un script que te pide un numero y te muestra en el navegador 
+      la tabla de multiplicar */
+      let multi = parseInt(prompt('Dame un número a multiplicar'));
+      function multiplicar() {
+        document.write('Tablas del 1 hasta ' + multi + '<br><br>');
+        for (let j = 1; j <= multi; j++) {
+          document.write('<div>Tabla del ' + j + '<br>');
+          for (let i = 1; i <= 10; i++) {
+            let igualA = j * i;
+            document.write(j + ' x ' + i + ' = ' + igualA + '<br>');
+          }
+          document.write('<br></div>');
+        }
+      }
+
+      multiplicar();
+    </script>
+  </body>
+</html>
